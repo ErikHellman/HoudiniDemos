@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 4rem;
+  color: #2c3e50;
+  padding: 0.5em;
+}
+
+ul {
+  list-style: square;
+  padding: 1em 2em;
+  text-align: start;
+  font-family: "Roboto", serif;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-between;
+  scroll-snap-type: x mandatory;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#tom {
+  width: 18vw;
+  height: 18vh;
+  background-color: lightblue;
+  border: 5px solid black;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  font-family: "Roboto Slab", serif;
+  font-size: 4rem;
+  color: #2c3e50;
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 5.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2.75rem;
+  color: #34495e;
+  margin-top: 0.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.flag {
+  width: 50vw;
+  height: calc(50vw * 0.625);
+  background: paint(swedish-flag);
+}

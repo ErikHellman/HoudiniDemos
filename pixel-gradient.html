@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Gradient</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pixel-gradient.css">
+  </head>
+  <body>
+    <main>
+      <section id="pixel-gradient">
+        <div class="title">Paint Demo</div>
+        <div class="subtitle">Pixel Gradient</div>
+      </section>
+    </main>
+  </body>
+  <script>
+    if ("paintWorklet" in CSS) {
+      CSS.paintWorklet.addModule("pixel-gradient.js");
+    }
+  </script>
+</html>

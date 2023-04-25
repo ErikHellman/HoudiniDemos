@@ -1,0 +1,22 @@
+#pixel-gradient {
+  --pixel-gradient-color: lightgreen;
+  background: paint(pixel-gradient);
+}
+
+/* The end colour of the gradient */
+@property --pixel-gradient-color {
+  syntax: "<color>";
+  initial-value: black;
+  inherits: true;
+}
+/* The size of each block in the gradient */
+@property --pixel-gradient-size {
+  syntax: "<length>";
+  initial-value: 8px;
+  inherits: true;
+}
+@property --pixel-gradient-seed {
+  syntax: "<number>";
+  initial-value: 1;
+  inherits: true;
+}

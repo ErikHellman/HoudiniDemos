@@ -1,0 +1,22 @@
+@property --start-color {
+  syntax: "<color>";
+  initial-value: black;
+  inherits: false;
+}
+@property --stop-color {
+  syntax: "<color>";
+  initial-value: white;
+  inherits: false;
+}
+
+.gradient {
+  --stop-color: darkblue;
+  --start-color: lightblue;
+  background-image: linear-gradient(var(--stop-color), var(--start-color));
+  transition: --stop-color 1s, --start-color 1s;
+}
+
+.gradient:hover {
+  --stop-color: lightblue;
+  --start-color: darkblue;
+}

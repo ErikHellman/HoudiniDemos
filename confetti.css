@@ -1,0 +1,17 @@
+@property --confetti-colors {
+  syntax: <color>+;
+  inherits: false;
+  initial-value: red green blue;
+}
+
+@property --confetti-seed {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 1;
+}
+
+#confetti {
+  --confetti-colors: red orange yellow green blue indigo violet;
+  --confetti-seed: 1;
+  background: paint(confetti);
+}

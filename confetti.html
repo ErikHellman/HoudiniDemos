@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Scrollable Sections</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="confetti.css">
+  </head>
+  <body>
+    <main>
+      <section id="confetti">
+        <div class="title">Confetti</div>
+      </section>
+    </main>
+  </body>
+  <script>
+    if ("paintWorklet" in CSS) {
+      CSS.paintWorklet.addModule("confetti-worklet.js");
+    }
+  </script>
+</html>
